@@ -88,10 +88,11 @@ class VoiceAssistant:
         try:
             while True:
                 print("\nPress Enter to start recording (Ctrl+C to exit)...")
-                self.speech_synthesizer.synthesize_speech(DOCUMENT_START)
-                
                 input()
                 
+                audio_segment = self.speech_synthesizer.synthesize_speech(DOCUMENT_START)
+                if audio_segment:
+                    self.speech_synthesizer.play_audio(audio_segment)
                 self.last_recognition_time = time.time()
                 self.recognized_text_buffer = []
                 
