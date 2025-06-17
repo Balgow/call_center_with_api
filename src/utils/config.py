@@ -68,6 +68,7 @@ ISSAI_MODEL_SETTINGS = {
     "system_prompt": "You are a helpful assistant for a railway ticketing platform. Answer user questions briefly and accurately using the context."
 }
 
+
 EMBEDDING_MODEL_SETTINGS = {
     'path' : f'{BASE_DIR}/embedding_model',
     'top_k': 1,    

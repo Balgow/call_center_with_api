@@ -15,6 +15,7 @@ class VoiceAssistant:
         self.speech_recognizer = SpeechRecognizer()
         self.speech_synthesizer = SpeechSynthesizer()
         self.gpt_handler = GPTHandler()
+        
         # self.document_loader = DocumentLoader()
         self.is_recording = False
         self.last_recognition_time = 0
@@ -93,6 +94,7 @@ class VoiceAssistant:
                 audio_segment = self.speech_synthesizer.synthesize_speech(DOCUMENT_START)
                 if audio_segment:
                     self.speech_synthesizer.play_audio(audio_segment)
+                    
                 self.last_recognition_time = time.time()
                 self.recognized_text_buffer = []
                 

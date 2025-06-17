@@ -38,6 +38,7 @@ class DocumentLoader:
             metadata = pickle.load(f)
         return index, metadata
     
+    
     def get_query_embedding(self, query):
         return self.model.encode(
             [query],
