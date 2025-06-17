@@ -1,6 +1,6 @@
 # Voice Assistant with Yandex Speech-to-Text and GPT-4
 
-This is a voice assistant that uses Yandex's Speech-to-Text API for speech recognition and OpenAI's GPT-4 for generating responses.
+This is a voice assistant that uses Yandex's Speech-to-Text API for speech recognition and LLM for generating responses.
 
 ## Features
 
@@ -13,7 +13,6 @@ This is a voice assistant that uses Yandex's Speech-to-Text API for speech recog
 
 - Python 3.8+
 - Yandex Cloud account with Speech-to-Text API access
-- OpenAI API key
 - Microphone access
 
 ## Setup
